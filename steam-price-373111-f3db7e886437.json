@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "steam-price-373111",
+  "private_key_id": "f3db7e886437104e56b21d5d584bb5386224b94a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAjfzxV1pnKvz8\nDSULiIF+AK2YVAEl0e3sExDA5dSTsmFMKabm1XqB3CaWRx4ZURORvh0ca+J07miv\n1xHssdwQMYCGjJGE5Tjf6E6rp6c3DF7byjc+MiF3z4RUVTFMrJ8r5KIedYzQZiQ7\nGFTJTKln3GqFXBkHlhuH0LfyWz3fJ72k9TRhyg49I3YKjp6GG1136/kLtD3ZNEin\nFuyeaVf0JTyeU/v4t2ZjuZyZVheYpJdX9gXBmNGdb3QhJNP9w8HVaR4hNVAZ6LJH\nXbKLBWmbIq+hLSA7MGLySdKhDgOWNdDT4yy+TvKARG7KOmJEEvvT7g2b+dXPP96d\nkPvWmUonAgMBAAECggEAVGSG1XHvLeNh8MiEEXt5IbQDYY2D2UMaj4rFn327vyYB\nzeM9gtNSt6K5CMlPsFHgDVLxKFlCbfRlzpepA//qDvDbP11RlBjw5fXHsSUwPQi/\ndH462xgWog/CFEIocs3/jznMMiRcHKR/waTG2FkwsFQjHaMBV1lbZJm+XUrPIcPj\nE2F7XjL2o9q6k+MuGDSmeMBifmjBqVfdK0rDcp3sG9alzfpaygR3dTQ5D7j7SiLp\n2lJh00uPLZl+8Y5skrY2jJW3WVmUl+nR1ndqjKRSPYShBxBunMcOFP2l/3oUuWp7\nxWgdKUICnjJpL40vFkELDSbMs0IYvPbdSCKSb7HMDQKBgQDfjv8ftZzTGKtXNHrr\ns661kXozchm7zjuspf6P0Nr0RoYYCDDIHcECufx5OOi4s6pDl/l9BXgaGbff1Ex+\nCZ3wcNDa3I912R4hQoSV758KBxCgGwo5UXxsRaNUeY3maP5f2AZxjGrz9rAM8f9t\n/+u9oXJdAPapfLYimcaJgaZNmwKBgQDcfzj56loravkkzn6YkQtNZyN+vznHgITJ\nO/Di+mszV9KUm3vPEr1M09lcpjd3pwnF0LaXaq+SdYkhjzNE/MgNDjGrvHXHWFtb\nlMQRrN1+yYQR2laP5c6D7eEdgoKoHnpQqdT/vPOowtVrEKXho7eTIdccnu1EHlBe\n+Nxgx9bEZQKBgQCylQg3zFv6RTqZ7tJCdsaZRBzZ+8uSuqvwvqkbOTuu5qc3i1Ns\niFgmVWvZahx9bwgT9tLVjAjk0KaRpoV0KTqBV51/N7Fh8o6fAwPmwgPJfttJClCg\nePdrhjVyxacU58pLxcVf70uAlw8LSEVDGay3TsCMirh/q5/TBAQU0/yFAQKBgQCv\nbTS6eP5mXsR7ySIlZfiVC4LM+30PwatjoyHipBOYFL5AZ3fYZvNe5Ymg0cl9k9MN\npCExVLr9DjAdGB5VO7w5ztor5VPbVuvQcAqSeXL7xX4i6hBGijKE+kRJQyWKdj0g\nYg5JrV46HVDIzsT7QVLzZ1AKwFLLCEcvWFWVVkkDlQKBgQCWGyvKOSymCC6tsFlJ\nnB86CX8w5mOCaFiZ3VBI+fzqikBytC/idWusXfMm/gW3Yr3ruxo6xBxoftM9d9e/\nZ2ZHQOYZ3g5NsiS+nljEZMB6xcBq0NUQRjHdJa6cH9fXyXCRbln9UkX1gBFxyzmA\nvp8SRTQsPJr29GFjyoC+Yn2yWA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "steampricetrackor@steam-price-373111.iam.gserviceaccount.com",
+  "client_id": "104207958574430804396",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/steampricetrackor%40steam-price-373111.iam.gserviceaccount.com"
+}
