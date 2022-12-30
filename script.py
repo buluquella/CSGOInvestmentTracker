@@ -1,4 +1,5 @@
 import gspread
+from gspread_formatting import *
 import steammarket as sm
 import time
 import json
@@ -39,25 +40,33 @@ def AddItem(_ItemName, _Amount, _BuyPrice):
     wks.update("B"+str(lastItemRow),_ItemName)
     wks.update("C"+str(lastItemRow),_Amount)
     wks.update("D"+str(lastItemRow),_BuyPrice)
+    myInventory.append((_ItemName + " " + _Amount + " " + _BuyPrice))
+
+def CountItems(values_list):
+    values_list = wks.col_values(2)
+    values_list = values_list[values_list.index("//Start Under This Row") + 1:]
+    return len(values_list)
 
 itemCount = int(input("How many items do you invest? "))
-lastItemRow = 6 + itemCount
+
+valueslist=0
+
 
 aiIN = ""
 aiAM = ""
 aiBP = ""
 
-AddItem(aiIN, aiAM, aiBP)
 
 while True:
     itemColumnLetter = 'B'
     lowestPriceColumLetter = 'J'
     medianPriceColumLetter = 'K'
     firstItemRowNo = 7
+    lastItemRow = firstItemRowNo + CountItems(valueslist)
     itemLocation = ""
     itemName = ""
 
-    for i in range(itemCount):
+    for i in range(CountItems(valueslist)):
         itemLocation = itemColumnLetter + str(firstItemRowNo)
         LowestPriceLocation = lowestPriceColumLetter + str(firstItemRowNo)
         MedianPriceLocation = medianPriceColumLetter + str(firstItemRowNo)
@@ -80,6 +89,9 @@ while True:
         firstItemRowNo += 1
 
     scriptLoopCount += 1
+
+    
+    AddItem(aiIN, aiAM, aiBP)
 
     print("Starting: ", scriptLoopCount,"th loop in 5 seconds...")
     time.sleep(5)
