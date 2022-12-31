@@ -49,13 +49,23 @@ def AddItemToTable():
     wks.update("C"+str(lastItemRow),e2)
     wks.update("D"+str(lastItemRow),e3)
 
+s=StringVar
+
 def ViewInventory():
     values_list = wks.col_values(2)
     values_list = values_list[values_list.index("//Start Under This Row") + 1:]
     MyList = []
     for i in values_list:
         MyList.append(i)
-    lblItemNameInv["text"] = "Item Name:"+str(MyList)
+    s = str(MyList)
+    s = s.replace(",", "\n")
+    s = s.replace("[", "")
+    s = s.replace("]", "")
+    s = s.replace("'", "")
+    lblItemNameInv["text"] = "Item Name: \n"+s
+    MyList.clear()
+    print(MyList)
+        
         
 ItemAddMenu = Frame(window, bg='red',height=500,width=300)
 ItemAddMenu.pack(side=LEFT)
@@ -80,13 +90,13 @@ viewInvBtn = Button(ItemAddMenu, text="View Inventory!", command=ViewInventory, 
 viewInvBtn.grid(column=0,row=8)
 
 InventoryMenu = Frame(window, bg='red',height=500,width=500)
-InventoryMenu.pack(side=RIGHT)
+InventoryMenu.pack()
 InventoryMenu.grid_propagate(0)
 
-Item1 = Frame(InventoryMenu, bg='black',height=50, width=500)
+Item1 = Frame(InventoryMenu ,bg='black',height=500, width=500)
 Item1.grid(column=0,row=0)
 Item1.grid_propagate(0)
-lblItemNameInv = Label(Item1, text='Item Name: Sticker | Natus Vincere | Stockholm 2021',font=('Tahoma', 12), bg='red')
+lblItemNameInv = Label(Item1, anchor='w',text='Item Name: Sticker | Natus Vincere | Stockholm 2021',font=('Tahoma', 12), bg='black')
 lblItemNameInv.grid(column=0,row=0)
 lblQuantityInv = Label(Item1, text='Quantity: ',font=('Tahoma', 12), bg='red')
 lblQuantityInv.grid(column=1,row=0)
